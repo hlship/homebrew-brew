@@ -12,10 +12,4 @@ class Aamachine < Formula
     end
     prefix.install "readme.txt", "license.txt"
   end
-
-  test do
-    (testpath/"test.dg").write("(program entry point) hello world")
-    system bin/"dialogc", "-tz8", "test.dg"
-    assert_predicate testpath/"test.z8", :exist?
-  end
 end
