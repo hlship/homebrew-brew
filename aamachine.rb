@@ -1,5 +1,5 @@
 class Aamachine < Formula
-  desc "Suppot for the Aa-machine IF virtual machine"
+  desc "Support for the Aa-machine virtual machine for Interactive Fiction"
   homepage "https://linusakesson.net/dialog/aamachine/"
   url "https://hd0.linusakesson.net/files/aamachine-0.5.1.zip"
   version "0.5.1"
