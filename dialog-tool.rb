@@ -1,8 +1,8 @@
 class DialogTool < Formula
   desc "Tool to assist in testing and building games using Dialog"
   homepage "https://github.com/hlship/dialog-tool"
-  url "https://github.com/hlship/dialog-tool/archive/v1.3.zip"
-  sha256 "cd6e9d67d5d4f4ca1ab8360b07656b9bcc141d6c07b6de7bf042c94b58c5eb0e"
+  url "https://github.com/hlship/dialog-tool/archive/v1.4.zip"
+  sha256 "a8d57567e4fe8191c01f825f77fa756fce19098672c332aae0795d0a5878752c"
 
   depends_on "candid82/brew/joker"
   depends_on "colordiff"
