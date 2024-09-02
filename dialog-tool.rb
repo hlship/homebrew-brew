@@ -1,21 +1,23 @@
 class DialogTool < Formula
   desc "Tool to assist in testing and building games using Dialog"
   homepage "https://github.com/hlship/dialog-tool"
-  url "https://github.com/hlship/dialog-tool/archive/v1.4.zip"
-  sha256 "a8d57567e4fe8191c01f825f77fa756fce19098672c332aae0795d0a5878752c"
+  url "https://github.com/hlship/dialog-tool/releases/download/v2.0-alpha-1/dialog-tool-v2.0-alpha-1.zip"
+  sha256 "493049a4070aad4bf66a9d7f32ed0c67547eaf7764b9e0fbc90a098955792476"
 
-  depends_on "candid82/brew/joker"
-  depends_on "colordiff"
+  version "2.0-alpha-1"
+
   depends_on "vickio/dialog/dialog-if"
-  depends_on "hlship/brew/aamachine"
+  depends_on "borkdude/brew/babashka"
+
 
   def install
-    chdir "bin" do
       bin.install "dgt"
-    end
+      bin.install "src"
+      bin.install "skein-ui"
+      bin.install "bb.edn"
   end
 
   test do
-    system bin/"dgt", "help"
+    system "./dgt", "help"
   end
 end
