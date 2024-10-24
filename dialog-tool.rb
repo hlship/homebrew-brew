@@ -15,6 +15,7 @@ class DialogTool < Formula
   def install
       bin.install "dgt"
       bin.install "src"
+      bin.install "resources"
       bin.install "skein-ui"
       bin.install "bb.edn"
   end
