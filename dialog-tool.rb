@@ -1,10 +1,10 @@
 class DialogTool < Formula
   desc "Tool to assist in testing and building games using Dialog"
   homepage "https://github.com/hlship/dialog-tool"
-  url "https://github.com/hlship/dialog-tool/releases/download/2.0-alpha-7/dialog-tool-2.0-alpha-7.zip"
-  sha256 "82b7737305fc91ca963afd9399275f41128a11314d9cade3336ebec58f0f1cd6"
+  url "https://github.com/hlship/dialog-tool/releases/download/2.0-alpha-8/dialog-tool-2.0-alpha-8.zip"
+  sha256 "687348118361dda0bcb204b4f96c892b32dc009caa4c8d18b85872e0062d56de"
 
-  version "2.0-alpha-7"
+  version "2.0-alpha-8"
 
   depends_on "vickio/dialog/dialog-if"
   depends_on "hlship/brew/aamachine"
@@ -19,12 +19,14 @@ class DialogTool < Formula
       bin.install "resources"
       bin.install "skein-ui"
       bin.install "bb.edn"
-  end
 
-  def post_install
-      # This will slow down the install by downloading dgt's dependencies, but means first time 
-      # startup is faster.
-      # system "#{bin}/dgt -h > /dev/null 2>&1"
+      zsh_completion_file = buildpath/"_dgt"
+
+      ENV["CLI_TOOLS_CACHE_DIR"] = buildpath
+      
+      system "bb", bin/"dgt", "completions", zsh_completion_file
+
+      zsh_completion.install zsh_completion_file
   end
 
   test do
