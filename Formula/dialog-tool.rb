@@ -10,7 +10,6 @@ class DialogTool < Formula
   depends_on "frotz"
   depends_on "imagemagick"
 
-
   def install
       bin.install "dgt"
       bin.install "src"
@@ -21,7 +20,7 @@ class DialogTool < Formula
       zsh_completion_file = buildpath/"_dgt"
 
       ENV["CLI_TOOLS_CACHE_DIR"] = buildpath
-      
+
       system "bb", bin/"dgt", "completions", zsh_completion_file
 
       zsh_completion.install zsh_completion_file
