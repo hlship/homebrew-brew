@@ -14,7 +14,6 @@ class DialogTool < Formula
       bin.install "dgt"
       bin.install "src"
       bin.install "resources"
-      bin.install "skein-ui"
       bin.install "bb.edn"
 
       zsh_completion_file = buildpath/"_dgt"
