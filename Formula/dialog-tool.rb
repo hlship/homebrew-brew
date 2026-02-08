@@ -1,13 +1,11 @@
 class DialogTool < Formula
-  desc "Tool to assist in testing and building games using Dialog"
+  desc "Tool to assist in testing and building games using the Dialog programming language"
   homepage "https://github.com/hlship/dialog-tool"
-  url "https://github.com/hlship/dialog-tool/releases/download/2.0-alpha-8/dialog-tool-2.0-alpha-8.zip"
-  sha256 "687348118361dda0bcb204b4f96c892b32dc009caa4c8d18b85872e0062d56de"
+  url " https://github.com/hlship/dialog-tool/releases/download/2.0-alpha-9/dialog-tool-2.0-alpha-9.zip"
+  sha256 "9b16cedabb0e806339ee87b3a425e4a14cce6cc454f56f59b3ae11e36da6bd2d"
 
-  version "2.0-alpha-8"
-
-  depends_on "vickio/dialog/dialog-if"
-  depends_on "hlship/brew/aamachine"
+  depends_on "dialog-if/brew/dialog-if"
+  depends_on "dialog-if/brew/aamachine"
   depends_on "borkdude/brew/babashka"
   depends_on "imagemagick"
   depends_on "frotz"
