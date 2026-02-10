@@ -1,8 +1,8 @@
 class DialogTool < Formula
   desc "Assist building projects for the Dialog programming language"
   homepage "https://github.com/hlship/dialog-tool"
-  url "https://github.com/hlship/dialog-tool/releases/download/2.0-alpha-9/dialog-tool-2.0-alpha-9.zip"
-  sha256 "9b16cedabb0e806339ee87b3a425e4a14cce6cc454f56f59b3ae11e36da6bd2d"
+  url "https://github.com/hlship/dialog-tool/releases/download/2.0-alpha-10/dialog-tool-2.0-alpha-10.zip
+  sha256 "d91ada75992c8134e5e47c00e8dfc39d0e20e8e220459a62c1fde77929d531fc"
 
   depends_on "borkdude/brew/babashka"
   depends_on "dialog-if/brew/aamachine"
