@@ -15,7 +15,7 @@ class DialogTool < Formula
 
   def install
       bin.install "bb.edn"
-      bin.install "dialog-tool-2.0-alpha-11.zip"
+      bin.install "dialog-tool-2.0-alpha-11.jar"
       bin.install "dgt"
 
       zsh_completion_file = buildpath/"_dgt"
