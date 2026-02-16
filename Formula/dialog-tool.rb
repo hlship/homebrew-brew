@@ -3,6 +3,8 @@ class DialogTool < Formula
   homepage "https://github.com/hlship/dialog-tool"
   url "https://github.com/hlship/dialog-tool/releases/download/2.0-alpha-11/dialog-tool-2.0-alpha-11.zip"
   sha256 "f2c434a5371cf63e0db10e22af19f9d0d70e883426016e40f0f8d30b1bd0f567"
+  version "2.0-alpha-11"
+  version_scheme 1 # Because version was borked in some prior releases due to -alpha-
 
   depends_on "borkdude/brew/babashka"
   depends_on "dialog-if/brew/aamachine"
