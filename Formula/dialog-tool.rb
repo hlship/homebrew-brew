@@ -16,6 +16,7 @@ class DialogTool < Formula
   def install
       bin.install "dialog-tool-2.0-beta-1.jar"
       bin.install "dgt"
+      chmod 0755, bin/"dgt"
 
       zsh_completion_file = buildpath/"_dgt"
 
