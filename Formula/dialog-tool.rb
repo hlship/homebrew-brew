@@ -1,9 +1,9 @@
 class DialogTool < Formula
   desc "Assist building projects for the Dialog programming language"
   homepage "https://github.com/hlship/dialog-tool"
-  url "https://github.com/hlship/dialog-tool/releases/download/2.0-beta-5/dialog-tool-2.0-beta-5.zip"
-  version "2.0-beta-5"
-  sha256 "69d37866db8594c06b3ae6bf47fc4546b02cb05e7e0cc9fca5187f8ff04c5830"
+  url "https://github.com/hlship/dialog-tool/releases/download/2.0-beta-6/dialog-tool-2.0-beta-6.zip"
+  version "2.0-beta-6"
+  sha256 "60b7ca3cdb27b97965a5ef36b83c5ff0a3b4244693d17ab958dac8db39936296"
   version_scheme 1 # Because version was borked in some prior releases due to -alpha-
 
   depends_on "dialog-if/brew/aamachine"
@@ -13,7 +13,7 @@ class DialogTool < Formula
   depends_on "java"
 
   def install
-      bin.install "dialog-tool-2.0-beta-5.jar"
+      bin.install "dialog-tool-2.0-beta-6.jar"
       bin.install "dgt"
       chmod 0755, bin/"dgt"
 
