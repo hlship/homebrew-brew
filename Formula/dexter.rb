@@ -1,14 +1,14 @@
 class Dexter < Formula
   desc "Interactive dependency explorer for Clojure and JVM projects"
   homepage "https://github.com/hlship/dexter"
-  url "https://github.com/hlship/dexter/releases/download/0.1-alpha-6/dexter-0.1-alpha-6.zip"
-  version "0.1-alpha-6"
-  sha256 "b9959ecf274e658a97106fa674c0b8cc5a6ca5ac92a9e1eea385d639d5752d0c"
+  url "https://github.com/hlship/dexter/releases/download/0.1-alpha-7/dexter-0.1-alpha-7.zip"
+  version "0.1-alpha-7"
+  sha256 "c7d44f21e278924194545bb8b014c6d0bf2c8370ed317524f56c72eca17c1b7e"
 
   depends_on "java"
 
   def install
-      bin.install "dexter-0.1-alpha-6.jar"
+      bin.install "dexter-0.1-alpha-7.jar"
       bin.install "dexter"
       chmod 0755, bin/"dexter"
   end
